@@ -11,7 +11,7 @@ layout: default
 <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
 
 <h1>{{ page.title }}</h1>
-<div> {{site.baseurl}} </div>
+<div>{{ page.date | 'date: "%B %-d, %Y"'}}</div>
 <div class='pure-g'>
   {% for image in image_files %}
     <div class='pure-u-1-4 pure-u-lg-1-8'> 
