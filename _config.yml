@@ -1,0 +1,94 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+defaults:
+  - scope:
+      path: "images/photos"
+    values:
+      image: true 
+  - scope:
+      type: single_photos
+    values:
+      layout: photo_single
+      path: "single_photos"
+
+# gallery:
+#   dir: photos               # Path to the gallery
+#   symlink: false            # false: copy images into _site. true: create symbolic links (saves disk space)
+#   title: "Photos"           # Title for gallery index page
+#   title_prefix: "Photos: "  # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
+#   sort_field: "date_time"   # How to sort galleries on the index page.
+#                             # Possible values are: title, date_time, best_image
+#   thumbnail_size:
+#     x: 400                  # max width of thumbnails (in pixels)
+#     y: 400                  # max height of thumbnails (in pixels)
+#   # The following options are for individual galleries.
+#   galleries:
+#     rosemount:
+#       best_image: 9W1A0107.jpeg 
+
+title: Simley Girls Hockey 2021-2022 
+email: jon.fredeen@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Simley Girls Hockey 2021-2022
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+#collections_dir: my_colllections
+
+collections:
+  games:
+    output: true
+    thumbnail_photo: 
+    title:
+    directory_name:
+    sort_by: date
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - mini_magick
+
+thumbnail:
+  resize_dimensions: '200x133^'
+  crop_dimensions: '200x133+0+0'
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
