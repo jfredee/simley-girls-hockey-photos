@@ -16,7 +16,7 @@ layout: default
   {% for image in image_files %}
     <div class='pure-u-1-4 pure-u-lg-1-8'> 
       <a href="images/photos/{{page.directory_name}}/{{image.name}}" >
-        <img class='pure-img' src="images/photos/{{page.directory_name}}/{{image.name}}" /> 
+        <img class='pure-img' src="{{site.basename}}/images/photos/{{page.directory_name}}/{{image.name}}" /> 
       </a>
     </div>
   {% endfor %}
