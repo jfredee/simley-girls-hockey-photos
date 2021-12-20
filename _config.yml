@@ -48,8 +48,8 @@ title: Simley Girls Hockey 2021-2022
 email: jon.fredeen@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Simley Girls Hockey 2021-2022
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/simley-girls-hockey-photos" # the subpath of your site, e.g. /blog
+url: "https://jfredee.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
