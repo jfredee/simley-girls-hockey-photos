@@ -11,7 +11,7 @@ layout: default
   {% for game in site.games %}
       <div class='pure-u-1-4'> 
         <a href="{{ game.url }}">
-          <img class="pure-img" src="/images/photos/{{game.directory_name}}/thumbs/{{game.thumbnail_photo}}"> 
+          <img class="pure-img" src="{{site.url}}/images/photos/{{game.directory_name}}/thumbs/{{game.thumbnail_photo}}"> 
           <div>{{game.title}}</div>
         </a>
         <div style="font-size: 12px">{{game.date | date: "%b %-d %Y"}}</div>
