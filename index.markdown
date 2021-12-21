@@ -13,7 +13,7 @@ layout: default
   {% for tilt in site.tilts %}
   {% assign game = image_files[tilt.directory_name] %}
       <div class='pure-u-1-4'> 
-        <a href="{{ site.base_url }}/{{ game[':directory_name'] }}/">
+        <a href="{{ site.baseurl }}/{{ game[':directory_name'] }}/">
           <img class="pure-img" src="{{site.s3_base_url}}{{game[':directory_name']}}/thumbs/{{game[':thumbnail_photo'] }}">  
           <div>{{game[':title']}}</div>
         </a>
