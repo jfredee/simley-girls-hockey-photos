@@ -7,6 +7,12 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
+
+group :development do
+  gem 'rake'
+  gem 'exifr'
+end
+
 gem "jekyll", "~> 4.2.1"
 gem "jekyll-minimagick", "~>0.0.4" 
 gem 'mini_magick'
