@@ -52,16 +52,17 @@ baseurl: "/simley-girls-hockey-photos" # the subpath of your site, e.g. /blog
 url: "https://jfredee.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+s3_base_url: https://simley-girls-hockey.s3.us-west-2.amazonaws.com/
 
 #collections_dir: my_colllections
 
-collections:
-  games:
-    output: true
-    thumbnail_photo: 
-    title:
-    directory_name:
-    sort_by: date
+# collections:
+#   games:
+#     output: true
+#     thumbnail_photo: 
+#     title:
+#     directory_name:
+#     sort_by: date
 
 # Build settings
 theme: minima
@@ -81,14 +82,17 @@ thumbnail:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - Rakefile
+  - lib/
+  - images/photos/
