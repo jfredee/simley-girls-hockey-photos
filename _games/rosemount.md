@@ -5,7 +5,7 @@ directory_name: rosemount
 permalink: /rosemount/
 description: "An example photo gallery."
 thumbnail_photo: "9W1A0049.jpeg"
-date: "2021-12-01"
+date: "2021-11-24"
 
 photos:
     set: rosemount
