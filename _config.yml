@@ -18,16 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-defaults:
-  - scope:
-      path: "images/photos"
-    values:
-      image: true 
-  - scope:
-      type: single_photos
-    values:
-      layout: photo_single
-      path: "single_photos"
+# defaults:
+#   - scope:
+#       path: "images/photos"
+#     values:
+#       image: true 
+#   - scope:
+#       type: single_photos
+#     values:
+#       layout: photo_single
+#       path: "single_photos"
 
 # gallery:
 #   dir: photos               # Path to the gallery
@@ -56,13 +56,13 @@ s3_base_url: https://simley-girls-hockey.s3.us-west-2.amazonaws.com/
 
 #collections_dir: my_colllections
 
-# collections:
-#   games:
-#     output: true
-#     thumbnail_photo: 
-#     title:
-#     directory_name:
-#     sort_by: date
+collections:
+  tilts:
+    output: true
+    thumbnail_photo: 
+    title:
+    directory_name:
+    sort_by: date
 
 # Build settings
 theme: minima
