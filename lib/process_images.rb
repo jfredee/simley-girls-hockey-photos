@@ -47,7 +47,8 @@ class ProcessImages
         game[:thumbnail_photo] = image_file
       end
     end
-    game[:images] = images
+    puts images
+    game[:images] = images.sort_by{ |i| i[:image_name]}
     game[:directory_name] = game_directory
     game[:title] = game_directory.split("_").collect(&:capitalize).join(" ")
     game[:thumbnail_photo] = images.first[:image_name] if !game[:thumbnail_photo]
