@@ -5,7 +5,7 @@ directory_name: hastings_away
 permalink: /hastings_away/
 description: "An example photo gallery."
 thumbnail_photo: 
-date: "2021-01-21"
+date: "2022-01-21"
 
 photos:
     set: hastings_away
